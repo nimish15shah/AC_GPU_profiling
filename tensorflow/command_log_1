@@ -1,0 +1,538 @@
+    1  [ -d .ssh ] || mkdir .ssh
+    2  mv /home/nvidia/tmp.pub /home/nvidia/.ssh/authorized_keys
+    3  exit
+    4  ping 172.16.0.1
+    5  ping 10.88.19.20
+    6  cd '/home/nvidia/report_ip_to_host.sh' 
+    7  ls
+    8  sudo gedit report_ip_to_host.sh 
+    9  ./report_ip_to_host.sh 
+   10  sudo ./report_ip_to_host.sh 
+   11  df -h
+   12  sudo apt-get install git cmake
+   13  cd '/home/nvidia/NVIDIA_CUDA-9.0_Samples/2_Graphics/Mandelbrot' 
+   14  cd '/home/nvidia/Desktop/ThesisMAI' 
+   15  git clone https://github.com/dusty-nv/jetson-inference
+   16  cd jetson-inference/
+   17  mkdir build
+   18  cd build/
+   19  cmake ../
+   20  make
+   21  cd aarch64/bin/
+   22  ./imagenet-console orange_0.jpg output_0.jpg
+   23  nvcc --version
+   24  ./nvcc --version
+   25  cd /usr/
+   26  cd local/cuda
+   27  cd bin/
+   28  nvcc --version
+   29  ./nvcc --version
+   30  gedit ~/.bashrc
+   31  nvcc --version
+   32  sudo apt-get install python-pip
+   33  cd Downloads/
+   34  sudo pip install tensorflow-1.5.0rc0-cp27-cp27mu-linux_aarch64.whl
+   35  tar -xzf TensorRT-3.0.4.Ubuntu-16.04.3.x86_64.cuda-9.0.cudnn7.0.tar.gz
+   36  sudo pip install TensorRT-3.0.4/uff/uff-0.2.0-py2.py3-none-any.whl
+   37  sudo pip -H install TensorRT-3.0.4/uff/uff-0.2.0-py2.py3-none-any.whl
+   38  sudo -H pip install TensorRT-3.0.4/uff/uff-0.2.0-py2.py3-none-any.whl
+   39  cd ..
+   40  ls
+   41  cd Desktop/ThesisMAI/
+   42  ls
+   43  git clone --recursive https://github.com/NVIDIA-Jetson/tf_to_trt_image_classification.git
+   44  cd tf_to_trt_image_classification/
+   45  mkdir build
+   46  cd build/
+   47  cmake ..
+   48  make
+   49  source scripts/download_models.sh
+   50  cd ..
+   51  source scripts/download_models.sh
+   52  python scripts/models_to_frozen_graphs.py
+   53  source scripts/download_images.sh
+   54  python scripts/convert_plan.py data/frozen_graphs/inception_v1.pb data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1 0 float
+   55  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+   56  python scripts/frozen_graphs_to_plans.py
+   57  python scripts/test_trt.py
+   58  python scripts/test_tf.py
+   59  python scripts/print_slim_output.py 
+   60  cd $TFTRT
+   61  echo $TFTRT
+   62  gedit ~/.bashrc
+   63  cd /usr/
+   64  ls
+   65  cd loca
+   66  cd local
+   67  ls
+   68  echo $HOME
+   69  cd $HOME
+   70  cd $TFTRT
+   71  echo $TFTRT
+   72  gedit ~/.bashrc
+   73  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   74  sudo apt-get install apt-transport-https
+   75  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   76  sudo apt-get update
+   77  sudo apt-get install sublime-text
+   78  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee 
+   79  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   80  sudo apt-get update
+   81  sudo apt-get install sublime-text
+   82  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   83  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   84  sudo apt-get update
+   85  sudo apt-get install sublime-text
+   86  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   87  Next. add the Sublime Text stable repository to your software sources:
+   88  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   89  If you want to run the latest development builds of Sublime Text you can: just run this command instead of the one above:
+   90  echo "deb https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   91  Whether stable or dev, once you’ve added the repo you can go ahead and run an update and install the app:
+   92  sudo apt update && sudo apt install sublime-text
+   93  That’s all you need to do.
+   94  When installation is complete you can launch the app from your desktop app launcher.
+   95  Polite Notice
+   96  This article is here as a “how to” for readers who want to install Sublime Text 3 on Ubuntu the official way. This article is not here because I think this app is better than {other code editor}. If emacs is your thing, keep using it; if Atom is your code bae, keep dating it, and so on.;  More Sharing Options:; RedditPocketTelegram; sublimetext2texteditor; Related Posts;  Font Finder for Linux Use Font Finder to Quickly Browse & Install Google Fonts on Ubuntu elisa music player Elisa Music Player Makes Its Debut Release canonical kernel live patch option in ubuntu 18.04 Ubuntu 18.04 Makes it Easier to Install Kernel Updates without Rebooting;    Popular This Week; 11 Things To Do After Installing Ubuntu 18.04 LTS; things to do after installing ubuntu 18.04 LTS; Ubuntu 18.04 LTS Released, This is What's New
+   97  ubuntu 18.04 LTS on a laptop
+   98  Ubuntu 18.04 LTS: What's New? [Video]; ubuntu 18.04 whats new; Ubuntu 18.04 Flavours Released, Available to Download; ubuntu flavor logos including xubuntu and ubuntu mate; Will You Upgrade to Ubuntu 18.04 LTS? [Poll]; ubuntu 18.04 upgrade poll;    ubuntu 18.04 whats new; Ubuntu 18.04; microsoft loves linux; Microsoft Linux; 
+   99  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+  100  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  101  sudo apt update && sudo apt install sublime-text
+  102  sudo apt install sublime-text
+  103  sudo apt-get install sublime-text
+  104  cd Downloads/
+  105  wget https://bootstrap.pypa.io/get-pip.py -O - | python
+  106  sudo wget https://bootstrap.pypa.io/get-pip.py -O - | python
+  107  sudo wget https://bootstrap.pypa.io/get-pip.py -O - | sudo python
+  108  pip install psutil
+  109  sudo pip install psutil
+  110  python
+  111  echo $TFTRT
+  112  cd $TFTRT
+  113  python scripts/convert_plan.py data/frozen_graphs/inception_v1.pb data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 16 0 float
+  114  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  115  python scripts/test_trt.py 
+  116  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 data/test_output_trt.txt
+  117  cd build
+  118  make
+  119  cd ..
+  120  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 data/test_output_trt.txt
+  121  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 16 1048576 0 data/test_output_trt.txt
+  122  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 32 1048576 0 data/test_output_trt.txt
+  123  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 64 1048576 0 data/test_output_trt.txt
+  124  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 500 half 64 1048576 0 data/test_output_trt.txt
+  125  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 1000 half 64 1048576 0 data/test_output_trt.txt
+  126  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 1000 half 1 1048576 0 data/test_output_trt.txt
+  127  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  128  cd build && make && cd ..
+  129  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  130  cd build && make && cd ..
+  131  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  132  cd build && make && cd ..
+  133  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  134  cd build && make && cd ..
+  135  cd ..
+  136  cd build && make && cd ..
+  137  cd ..
+  138  cd build && make && cd ..
+  139  cd ..
+  140  cd build && make && cd ..
+  141  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  142  cd build && make && cd ..
+  143  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  144  cd build && make && cd ..
+  145  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  146  cd build && make && cd ..
+  147  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  148  cd build && make && cd ..
+  149  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  150  cd build && make && cd ..
+  151  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  152  cd build && make && cd ..
+  153  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  154  cd build && make && cd ..
+  155  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  156  cd build && make && cd ..
+  157  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  158  cd ..
+  159  cd build && make && cd ..
+  160  echo $TFTRT
+  161  cd $TFTRT/build && make && cd ..
+  162  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  163  cd $TFTRT/build && make && cd ..
+  164  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  165  cd $TFTRT/build && make && cd ..
+  166  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  167  cd $TFTRT/build && make && cd ..
+  168  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  169  cd $TFTRT/build && make && cd ..
+  170  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  171  cd $TFTRT/build && make && cd ..
+  172  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  173  cd $TFTRT/build && make && cd ..
+  174  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  175  cd $TFTRT/build && make && cd ..
+  176  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  177  cd $TFTRT/build && make && cd ..
+  178  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  179  cd $TFTRT/build && make && cd ..
+  180  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  181  cd $TFTRT/build && make && cd ..
+  182  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  183  cd $TFTRT/build && make && cd ..
+  184  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  185  cd $TFTRT/build && make && cd ..
+  186  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  187  cd $TFTRT/build && make && cd ..
+  188  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  189  cd $TFTRT/build && make && cd ..
+  190  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  191  cd $TFTRT/build && make && cd ..
+  192  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  193  cd $TFTRT/build && make && cd ..
+  194  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  195  cd $TFTRT/build && make && cd ..
+  196  ./build/examples/classify_image/classify_image data/images/gordon_setter.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  197  cd $TFTRT/build && make && cd ..
+  198  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 1 data/test_output_trt.txt
+  199  cd $TFTRT/build && make && cd ..
+  200  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 1 data/test_output_trt.txt
+  201  cd $TFTRT/build && make && cd ..
+  202  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 1 data/test_output_trt.txt
+  203  cd $TFTRT/build && make && cd ..
+  204  ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 1 data/test_output_trt.txt
+  205  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 1 data/test_output_trt.txt
+  206  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 data/test_output_trt.txt 1
+  207  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 1 1048576 0 data/test_output_trt.txt 2
+  208  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 2 1048576 0 data/test_output_trt.txt 2
+  209  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 10 1048576 0 data/test_output_trt.txt 2
+  210  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 10 1048576 0 data/test_output_trt.txt 1
+  211  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 10 1048576 0 data/test_output_trt.txt 1
+  212  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 10 1048576 0 data/test_output_trt.txt 2
+  213  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 50 half 16 1048576 0 data/test_output_trt.txt 16
+  214  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 500 half 16 1048576 0 data/test_output_trt.txt 16
+  215  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 500 half 16 1048576 0 data/test_output_trt.txt 1
+  216  cd $TFTRT/build && make && cd .. && ./build/src/test/test_trt data/images/gordon_setter.jpg data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1001 preprocess_inception 500 half 16 1048576 0 data/test_output_trt.txt 5
+  217  ./build/examples/classify_image/classify_image data/images/golden_retriever.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  218  ./build/examples/classify_image/classify_image data/images/lifeboat.jpg data/plans/inception_v1_16.plan data/imagenet_labels_1001.txt input InceptionV1/Logits/SpatialSqueeze inception
+  219  python scripts/test_trt.py 
+  220  python scripts/test_trt_sweep.py 
+  221  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  222  python scripts/test_trt_sweep.py 
+  223  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  224  python scripts/convert_plan.py data/frozen_graphs/inception_v1.pb data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1 0 float
+  225  python scripts/convert_plan.py data/frozen_graphs/inception_v1.pb data/plans/inception_v1_32.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 32 0 float
+  226  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  227  python scripts/convert_plan.py data/frozen_graphs/inception_v1.pb data/plans/inception_v1_32.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 32 0 half
+  228  python scripts/convert_plan.py data/frozen_graphs/inception_v1.pb data/plans/inception_v1_16.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 16 0 half
+  229  python scripts/convert_plan.py data/frozen_graphs/inception_v1.pb data/plans/inception_v1.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1 0 half
+  230  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  231  python scripts/test_subprocess.py 
+  232  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  233  python shell
+  234  python
+  235  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  236  python
+  237  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  238  sudo nvpmodel -m 1
+  239  cd $TFTRT/build && make && cd .. && python scripts/test_trt_sweep.py 
+  240  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  241  python scripts/inference_tensorflow.py
+  242  python scripts/inference_tensorflow.py test
+  243  python scripts/inference_tensorflow.py inception_v1
+  244  python scripts/inference_tensorflow.py inception_v1 500
+  245  python scripts/inference_tensorflow.py inception_v1
+  246  python scripts/inference_tensorflow.py inception_v1 500
+  247  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  248  sudo apt-get install xcalib
+  249  xcalib -i -a
+  250  xrandr -s 1920x1080
+  251  cd $TFTRT
+  252  watch -n 1 cat data/test_output_sweep.txt 
+  253  watch -n 1 gedit data/test_output_sweep.txt 
+  254  watch -n 1 cat data/test_output_sweep.txt 
+  255  ls
+  256  cd $TRTTF
+  257  cd $TFTRT
+  258  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  259  source scripts/download_models.sh
+  260  python scripts/models_to_frozen_graphs.py
+  261  python scripts/convert_plan.py data/frozen_graphs/inception_v2.pb data/plans/inception_v2_32.plan input 224 224 InceptionV1/Logits/SpatialSqueeze 1 0 half
+  262  python scripts/convert_plan.py data/frozen_graphs/inception_v2.pb data/plans/inception_v2.plan input 224 224 InceptionV2/Logits/SpatialSqueeze 1 0 half
+  263  python scripts/convert_plan.py data/frozen_graphs/inception_v3.pb data/plans/inception_v3.plan input 224 224 InceptionV3/Logits/SpatialSqueeze 1 0 half
+  264  python scripts/convert_plan.py data/frozen_graphs/inception_v4.pb data/plans/inception_v4.plan input 224 224 InceptionV4/Logits/SpatialSqueeze 1 0 half
+  265  python scripts/convert_plan.py data/frozen_graphs/inception_v3.pb data/plans/inception_v3.plan input 299 299 InceptionV3/Logits/SpatialSqueeze 1 0 half
+  266  Dpython scripts/convert_plan.py data/frozen_graphs/inception_v4.pb data/plans/inception_v4.plan input 299 299 InceptionV4/Logits/Logits/BiasAdd 1 0 half
+  267  python scripts/convert_plan.py data/frozen_graphs/inception_v4.pb data/plans/inception_v4.plan input 299 299 InceptionV4/Logits/Logits/BiasAdd 1 0 half
+  268  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  269  source scripts/download_models.sh
+  270  python scripts/models_to_frozen_graphs.py
+  271  python scripts/convert_plan.py data/frozen_graphs/vgg_16.pb data/plans/vgg_16.plan input 224 224 vgg_16/fc8/BiasAdd 1 0 half
+  272  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  273  python scripts/convert_plan.py data/frozen_graphs/vgg_16.pb data/plans/vgg_16.plan input 224 224 vgg_16/fc8/BiasAdd 1 0 half
+  274  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  275  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py -i
+  276  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py
+  277  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  278  python scripts/inference_tensorflow.py vgg_16 100
+  279  python scripts/inference_tensorflow.py vgg_16 10
+  280  syslog
+  281  python scripts/inference_tensorflow.py vgg_16 2
+  282  cd $TFTRT/build && make && cd .. && python scripts/test_sweep.py 
+  283  sudo apt install x11vnc
+  284  x11vnc -storepasswd
+  285  x11vnc -usepw
+  286  htop
+  287  top
+  288  sudo apt-get install htop
+  289  htop
+  290  cd $TFTRT
+  291  python scripts/make_plots.py 
+  292  cd $TFTRT
+  293  python scripts/make_plots.py 
+  294  cd /usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/
+  295  ls
+  296  gedit matplotlibrc 
+  297  sudo gedit matplotlibrc 
+  298  sudo nvpmodel -m 0
+  299  cd $TFTRT
+  300  python scripts/make_plots.py 
+  301  htop
+  302  cd $TFTRT
+  303  python scripts/make_plots.py 
+  304  exit
+  305  cd $TFTRT
+  306  python scripts/make_plots.py 
+  307  cd $TFTRT
+  308  python scripts/make_plots.py 
+  309  python scripts/test_sweep.py 
+  310  python scripts/make_plots.py 
+  311  python scripts/test_sweep.py 
+  312  python scripts/make_plots.py 
+  313  python scripts/test_sweep.py 
+  314  python scripts/make_plots.py 
+  315  htop
+  316  cd $TFTRT
+  317  python scripts/convert_plan.py data/frozen_graphs/mobilenet_v2_1.3_224_frozen.pb data/plans/mobilenet_v2_1p3_224_frozen.plan input 224 224 MobilenetV2/Predictions/Reshape_1 64 0 half
+  318  python scripts/convert_relu6.py data/frozen_graphs/mobilenet_v2_1.3_224_frozen.pb data/frozen_graphs/mobilenet_v2_1.3_224_frozen_new.pb 
+  319  python scripts/convert_plan.py data/frozen_graphs/mobilenet_v2_1.3_224_frozen_new.pb data/plans/mobilenet_v2_1p3_224.plan input 224 224 MobilenetV2/Predictions/Reshape_1 64 0 half
+  320  python scripts/models_to_frozen_graphs.py 
+  321  cd $TFTRT
+  322  ls
+  323  s
+  324  ls
+  325  which python
+  326  python -V
+  327  sudo apt-get install lm-sensors
+  328  cat /sys/class/thermal/thermal_zone*/temp
+  329  sudo apt-get install sensors-applet
+  330  g jetson_clocks.sh 
+  331  gvim jetson_clocks.sh 
+  332  vim jetson_clocks.sh 
+  333  ./jetson_clocks.sh --do_fan
+  334  ./jetson_clocks.sh
+  335  sudo ./jetson_clocks.sh
+  336  sudo ./jetson_clocks.sh --restore
+  337  sudo ./jetson_clocks.sh --store
+  338  sudo ./jetson_clocks.sh --restore
+  339  sudo ./jetson_clocks.sh --show
+  340  vim ./jetson_clocks.sh 
+  341  which pip
+  342  which pip3
+  343  python
+  344  g Makefile 
+  345  pip3 search pyyaml
+  346  pip3 install pyyaml
+  347  pip3 install libspn
+  348  ls
+  349  mv libspn/try.py .
+  350  python try.py 
+  351  python3 try.py 
+  352  pip3 install tensorflow
+  353  virtualenv --system-site-packages -p python3 ./venv
+  354  sudo pip3 install -U virtualenv 
+  355  virtualenv --system-site-packages -p python3 ./venv
+  356  source ./venv/bin/activate
+  357  ls
+  358  pip list
+  359  pip3 list
+  360  pip install --user --upgrade tensorflow-gpu
+  361  pip install --upgrade tensorflow-gpu
+  362  pip install --upgrade tensorflow
+  363  python3
+  364  python
+  365  pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.14.0-cp35-cp35m-linux_x86_64.whl
+  366  python3 -V
+  367  pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.14.0-cp35-cp35m-linux_x86_64.whl
+  368  pip search tensorflow
+  369  pip install tensorflow-gpu
+  370  deactivate 
+  371  $ sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev
+  372  sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev
+  373  $ sudo pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
+  374  sudo pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
+  375  $ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
+  376  sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
+  377  sudo pip3 install -U pip
+  378  sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
+  379  sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
+  380  sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.12.0
+  381  sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.12.0+nv19.1
+  382  sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.12.0+nv19.01
+  383  sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.3
+  384  sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v33 tensorflow-gpu==1.9.0+nv18.8
+  385  python3
+  386  python3 try.py 
+  387  pip3 install tensorflow_probability
+  388  sudo pip3 install tensorflow_probability
+  389  sudo pip3 install libspn
+  390  cd ..
+  391  ls
+  392  cd ..
+  393  ls
+  394  cd AC_GPU_profiling/
+  395  ls
+  396  cd tensorflow/
+  397  ls
+  398  cat main.py 
+  399  cd ..
+  400  mkdir libspn
+  401  cd libspn/
+  402  touch try.py
+  403  python try.py 
+  404  g try.py 
+  405  python try.py 
+  406  python3 try.py 
+  407  python3.5 try.py 
+  408  sudo apt-get install python3.6
+  409  pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.14.0-cp35-cp35m-linux_x86_64.whl
+  410  ls
+  411  cd ../..
+  412  cd libspn/
+  413  l
+  414  scd libspn-master
+  415  cd libspn-master
+  416  ls
+  417  cd libspn/
+  418  grep -irn tensorflow-pro *
+  419  cd ..
+  420  grep -irn tensorflow-pro *
+  421  ls
+  422  sudo pip3 install --upgrade tensorflow-gpu
+  423  sudo pip3 install tensorflow-gpu
+  424  sudo pip3 install tensorflow-gpu=1.14.0
+  425  sudo pip3 install tensorflow-gpu==1.14.0
+  426  g try.py 
+  427  python3 try.py 
+  428  ls
+  429  python3 try.py 
+  430  cd libspn/
+  431  grep -irn tensorflow_pro *
+  432  grep -irn tfd *
+  433  g graph/node.py 
+  434  python3 try.py 
+  435  cd ..
+  436  python3 try.py 
+  437  g libspn/__init__.py
+  438  python3 try.py 
+  439  mv ../../AC_GPU_profiling/libspn/try.py .
+  440  python3 try.py 
+  441  grep -nr RANDOM_UNIFORM libspn/*
+  442  grep -nr RANDOM libspn/*
+  443  grep -inr RANDOM libspn/*
+  444  grep -inr RANDOM_uniform libspn/*
+  445  python3 try.py 
+  446  ls
+  447  cd libspn/
+  448  ls
+  449  ls visual/
+  450  ls
+  451  cd visual/
+  452  ls
+  453  cd ..
+  454  python3 try.py 
+  455  g /README.txt 
+  456  cd libspn/
+  457  ls
+  458  cd visual/
+  459  ls
+  460  touch graph.html
+  461  g graph.html 
+  462  cd -
+  463  cd ..
+  464  python3 try.py 
+  465  pip3 install ipython
+  466  sudo pip3 install ipython
+  467  python3 try.py 
+  468  jupyter
+  469  ipython
+  470  python3 try.py 
+  471  cd libspn/
+  472  ls
+  473  cd inference/
+  474  ls
+  475  cd ..
+  476  cd examples/
+  477  grep -irn session *
+  478  g convspn/train.py 
+  479  ls
+  480  cd ../tests/
+  481  ls
+  482  grep -irn session *
+  483  grep -irn run *
+  484  g test_inference.py n
+  485  cd ..
+  486  python3 try.py 
+  487  pip show tensorflow
+  488  pip show tensorflow-gpu
+  489  g /usr/local/lib/python3.5/dist-packages/tensorflow_gpu-1.9.0+nv18.8.dist-info/
+  490  pip3 show tensorflow-gpu
+  491  pip3 show tensorflow
+  492  python3 try.py 
+  493  g /usr/local/lib/python3.5/dist-packages/tensorflow/
+  494  l /usr/local/lib/python3.5/dist-packages/tensorflow/
+  495  l /usr/local/lib/python3.5/dist-packages/tensorflow/core/
+  496  cd ..
+  497  cd -
+  498  l /usr/local/lib/python3.5/dist-packages/tensorflow/__init__.py 
+  499  g /usr/local/lib/python3.5/dist-packages/tensorflow/__init__.py 
+  500  python3 try.py 
+  501  exit(1)
+  502  sudo python3 try.py 
+  503  exit() q
+  504  exit()
+  505  cd /usr/local/lib/python3.5/dist-packages/tensorflow/
+  506  ls
+  507  cd core/pro
+  508  cd core/protobuf/
+  509  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_current0_input 
+  510  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_current1_input 
+  511  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_current2_input 
+  512  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/rail_name_0 
+  513  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/rail_name_1
+  514  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/rail_name_2
+  515  cat /sys/devices/3160000.i2c/i2c-0/0-0041/iio_device/rail_name_0
+  516  cat /sys/devices/3160000.i2c/i2c-0/0-0041/iio_device/rail_name_1
+  517  cat /sys/devices/3160000.i2c/i2c-0/0-0041/iio_device/rail_name_2
+  518  cat /sys/devices/3160000.i2c/i2c-0/0-0042/iio_device/rail_name_2
+  519  cat /sys/devices/3160000.i2c/i2c-0/0-0042/iio_device/rail_name_1
+  520  cat /sys/devices/3160000.i2c/i2c-0/0-0042/iio_device/rail_name_0
+  521  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/rail_name_0
+  522  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_voltage_0
+  523  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_voltage0_input 
+  524  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_current0_input 
+  525  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_power0_input 
+  526  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/name 
+  527  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/running_mode 
+  528  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_current0_input 
+  529  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/rail_name_0 
+  530  cat /sys/devices/3160000.i2c/i2c-0/0-0041/iio_device/rail_name_0 
+  531  cat /sys/devices/3160000.i2c/i2c-0/0-0041/iio_device/rail_name_1
+  532  cat /sys/devices/3160000.i2c/i2c-0/0-0041/iio_device/in_power0_input 
+  533  cat /sys/devices/3160000.i2c/i2c-0/0-0040/iio_device/in_power0_input 
+  534  history > ./command_log_1
+  535  history > command_log_1
+  536  cd ~/Nimish/libspn/libspn-master/
+  537  ls
+  538  history > command_log_1
