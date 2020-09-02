@@ -8,8 +8,7 @@
 #include <assert.h>
 #include <string.h>
 
-#include "./files/bank_note_thread64_gpu_cuda_3.cu"
-//#include "./files/bank_note_thread128_no_bankcnf_gpu_cuda_3.cu"
+#include "./files/msnbc_thread32_gpu_cuda_3.cu"
 
 #define gpuErrchk(ans) { gpuAssert((ans), __FILE__, __LINE__); }
 inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=true)

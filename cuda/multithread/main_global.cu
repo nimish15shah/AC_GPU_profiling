@@ -8,8 +8,7 @@
 #include <assert.h>
 #include <string.h>
 
-#include "./files/bank_note_thread64_gpu_cuda_3.cu"
-//#include "./files/bank_note_thread128_no_bankcnf_gpu_cuda_3.cu"
+#include "./files/bnetflix_psdd_thread512_no_bankcnf_global_gpu_cuda_3.cu"
 
 #define gpuErrchk(ans) { gpuAssert((ans), __FILE__, __LINE__); }
 inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=true)
@@ -26,8 +25,8 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=t
  * CUDA Kernel Device code
  */
 __global__ void
-main_ac(float *A, int *B, int *C, bool *Op, int nIter) { 
-  ac(A, B, C, Op, nIter); 
+main_ac(float *A, int *B, int *C, bool *Op, float * R, int nIter) { 
+  ac(A, B, C, Op, R, nIter); 
 }
 
 int 
@@ -64,6 +63,9 @@ main(int argc, char **argv)
     bool *d_Op = NULL;
     gpuErrchk( cudaMalloc((void **)&d_Op, size_op));
     
+    float *d_R = NULL;
+    gpuErrchk(cudaMalloc((void **)&d_R, sizeof(float) * 331*THREADS_PER_BLOCK));
+    
     // Copy the host input vectors A and B in host memory to the device input vectors in
     // device memory
     printf("Copy input data from the host memory to the CUDA device\n");
@@ -78,7 +80,10 @@ main(int argc, char **argv)
     struct timeval t1, t2;
     gettimeofday(&t1, 0);
 
-    main_ac<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, d_Op, nIter);
+    // Set L1 bigger than Shared
+    gpuErrchk(cudaDeviceSetCacheConfig(cudaFuncCachePreferL1));
+
+    main_ac<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, d_Op, d_R, nIter);
 
     // FInish execution of kernel
     cudaDeviceSynchronize();
